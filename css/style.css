@@ -7,13 +7,13 @@
 @import 'lists.css';
 
 :root {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,8 +21,11 @@ body {
   display: flex;
   flex-direction: column;
   /* background-image: url(../images/ideal.jpg); */
-  background-size: 1440px;
+  /* background-size: 1440px; */
   background-repeat: no-repeat;
+  width: 100%;
+  overflow: auto;
+  /* overflow-y: hidden; */
 }
 
 h2 {
@@ -63,25 +66,39 @@ p {
     outline-color: #4A90E2;
 }
 
+.inbox,
+.done {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background-color: #F4F4F4;
+  box-shadow: -2px 2px 6px -1px rgba(0,0,0,0.1);
+}
+
+.done {
+  left: 0;
+  box-shadow: 2px 2px 6px -1px rgba(0,0,0,0.1);
+}
+
+.done > i, .inbox > i {
+  padding: 12px;
+  font-size: 15px;
+  color: #AAAAAA;
+}
 
 /* -----------Columns----------- */
 
-.lists-container::-webkit-scrollbar {
-  height: 2.4rem;
-}
-
-.lists-container::-webkit-scrollbar-thumb {
-  background-color: #66a3c7;
-  border: 0.8rem solid #0079bf;
-  border-top-width: 0;
+.list:first-child {
+    margin-left: 60px;
 }
 
 .lists-container {
   display: flex;
   align-items: start;
-  padding: 2rem 5.4rem 0 5.4rem;
-  overflow-x: auto;
+  padding: 2rem 5.4rem 0 0rem;
   height: calc(100vh - 8.6rem);
+  width: 100%;
 }
 
 .list {
@@ -94,7 +111,7 @@ p {
 }
 
 .list:last-of-type {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .list-items {
@@ -107,7 +124,7 @@ p {
 }
 
 .list-items::-webkit-scrollbar {
-    width: 1.6rem;
+  width: 1.6rem;
 }
 
 .list-items::-webkit-scrollbar-thumb {
@@ -168,5 +185,5 @@ p {
 }
 
 .add-list-btn:hover {
-    background-color: #005485;
+  background-color: #005485;
 }

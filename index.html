@@ -15,7 +15,7 @@
   <section class="mainMenu">
     <div class="leftmenu">
       <h2>PSYCHO</h2>
-      <p>Search</p>
+      <span class="search"><i class="fas fa-search"></i><p class="inactive">Search</p></span>
       <p>Tasks</p>
       <p>Projects</p>
     </div>
@@ -35,46 +35,103 @@
     </div>
 
     <div class="rightmenu">
-      <p>New Board</p>
+      <p class="inactive">New Board</p>
     </div>
   </section>
 </header>
 
 <!----------- Board with Columns ----------->
+
+
 <section class="lists-container">
 
 	<div class="list">
-
 		<h3 class="list-title">In Progress</h3>
-
 		<ul class="list-items">
-
       <div class="card">
-        <div class="picture"><img src="https://www.designboom.com/wp-content/uploads/2018/10/student-develops-prosthesis-helping-ballerinas-perfect-technique-designboom-1800.jpg" alt=""></div>
+        <div class="picture"><img src="https://cdn-images-1.medium.com/max/2000/0*e9BClIzSuqsOEw0a.jpg" alt=""></div>
         <div class="content">
           <p>Сделать стикерпак для телеграм</p>
-          <div class="icons"></div>
+          <div class="icons">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-paperclip"></i>
+              <i class="far fa-check-square"></i>
+          </div>
         </div>
       </div>
-
       <div class="card">
         <div class="content">
           <p>Сделать стикерпак для телеграм</p>
-          <div class="icons"></div>
         </div>
       </div>
-
 		</ul>
-
 		<button class="add-card-btn btn">Add a card...</button>
-
 	</div>
 
 	<div class="list">
-
 		<h3 class="list-title">Priority</h3>
-
 		<ul class="list-items">
+      <div class="card">
+        <div class="content">
+          <p>Сделать стикерпак для телеграм</p>
+          <div class="icons">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-paperclip"></i>
+              <i class="far fa-check-square"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="picture"><img src="https://cdn-images-1.medium.com/max/1600/1*XLYPQXNqTSOABCJJ1Zr3RQ.gif" alt=""></div>
+        <div class="content">
+          <p>Сделать стикерпак для телеграм</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>Сделать стикерпак не для телеграм</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>Написать книгу про что-нибудь</p>
+        </div>
+      </div>
+		</ul>
+		<button class="add-card-btn btn">Add a card...</button>
+	</div>
+
+  <div class="list">
+    <h3 class="list-title">To Do</h3>
+    <ul class="list-items">
+      <div class="card">
+        <div class="picture"><img src="https://cdn-images-1.medium.com/max/1600/0*CHvnaqna8lQ7U7dW.png" alt=""></div>
+        <div class="content">
+          <p>Запостить проекты на Codepen</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>Сделать стикерпак не для телеграм</p>
+          <div class="icons">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-paperclip"></i>
+              <i class="far fa-check-square"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>Написать книгу про что-нибудь</p>
+        </div>
+      </div>
+    </ul>
+    <button class="add-card-btn btn">Add a card...</button>
+  </div>
+
+  <div class="list">
+    <h3 class="list-title">Waiting</h3>
+    <ul class="list-items">
       <div class="card">
         <div class="content">
           <p>Сделать стикерпак для телеграм</p>
@@ -87,31 +144,66 @@
       </div>
 
       <div class="card">
-        <div class="picture"><img src="https://www.designboom.com/wp-content/uploads/2018/10/student-develops-prosthesis-helping-ballerinas-perfect-technique-designboom-1800.jpg" alt=""></div>
-        <div class="content">
-          <p>Сделать стикерпак для телеграм</p>
-          <div class="icons"></div>
-        </div>
-      </div>
-
-      <div class="card">
         <div class="content">
           <p>Сделать стикерпак не для телеграм</p>
-          <div class="icons"></div>
         </div>
       </div>
-      
       <div class="card">
         <div class="content">
           <p>Написать книгу про что-нибудь</p>
-          <div class="icons"></div>
         </div>
       </div>
-		</ul>
+      <div class="card">
+        <div class="picture"><img src="https://www.designboom.com/wp-content/uploads/2018/10/student-develops-prosthesis-helping-ballerinas-perfect-technique-designboom-1800.jpg" alt=""></div>
+        <div class="content">
+          <p>Сделать стикерпак для телеграм</p>
+        </div>
+      </div>
+    </ul>
+    <button class="add-card-btn btn">Add a card...</button>
+  </div>
 
-		<button class="add-card-btn btn">Add a card...</button>
+  <div class="list">
+    <h3 class="list-title">Ideas</h3>
+    <ul class="list-items">
+      <div class="card">
+        <div class="picture"><img src="images/card1.png" alt=""></div>
+        <div class="content">
+          <p>Натырить красивых картинок с muzli</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="picture"><img src="https://design-milk.com/images/2018/10/BarryMcG-ratio3-810x594.jpg" alt=""></div>
+        <div class="content">
+          <p>Прикрепить картинки ссылками</p>
+          <div class="icons">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-paperclip"></i>
+              <i class="far fa-check-square"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>Успешно пройти просмотр</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>Отдохнуть</p>
+        </div>
+      </div>
+    </ul>
+    <button class="add-card-btn btn">Add a card...</button>
+  </div>
 
-	</div>
+  <div class="list">
+    <h3 class="list-title">New List</h3>
+    <button class="add-card-btn btn">Add a card...</button>
+  </div>
+
+  <div class="done"><i class="fas fa-check"></i></div>
+  <div class="inbox"><i class="fas fa-inbox"></i></div>
 </section>
 
 </body>

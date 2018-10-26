@@ -33,12 +33,24 @@
   padding-right: 65px;
 }
 
-.leftmenu > p {
+.leftmenu > p, span {
   padding-right: 30px;
 }
 
 .rightmenu > p {
   padding-left: 30px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search > i {
+  padding: 12px;
+  font-size: 15px;
+  color: #AAAAAA;
 }
 
 .user {
@@ -47,4 +59,8 @@
   height: 40px;
   background: #D8D8D8;
   margin-left: 30px;
+}
+
+.inactive {
+  color: #9B9B9B;
 }
